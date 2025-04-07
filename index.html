@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pagina WEB</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <!-- Secci?n encabezado -->
+    <header class="header">
+        <a href="Index.html" class="logo"><img src="imagen/logo1.jpg"></a>
+        <h1>TINTAL ROJO</h1>
+        <nav class="navbar">
+            <span class="icon" onclick="toggleMenu()">&#9776;</span>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="quienessomos.html">Quienes Somos</a></li>
+                <li><a href="productos.html">Catalogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Secci?n de contenido principal-->
+    <main>
+        <!-- Secci?n de la empresa -->
+        <section id="empresa" class="columnas">
+            <div class="izquierda">
+                <img src="quienessomos.jpg" width="200" heigth="250" alt="quienes_somos">
+            </div>
+            <div class="derecha">
+                <h2>Mision</h2>
+                <p>Nuestra Mision como Empresa es brindar productos de calidad a nuestro clientes...</p>    
+            </div>
+        </section>
+
+        <!-- Secci?n de Promociones -->
+        <section id="promocion">
+            <h2>PROMOCIONES</h2>
+            <div class="catalogo">
+                <!-- promocion 1 -->
+                <div class="producto">
+                    <img src="achiote1.jpg" alt="Producto 1">
+                    <div class="producto-info">
+                        <h2>Promocion Especial</h2>
+                        <p>Pan de Achiote (chico)</p>
+                        <p>Promocion:</p>
+                        <p>En la Compra de 2 Panes Chicos se lo lleva en $100</p>
+                    </div>
+                </div>
+                <!-- promocion 2 -->
+                <div class="producto">
+                    <img src="semilla.jpg" alt="Producto 2">
+                    <div class="producto-info">
+                        <h2>Promocion Especial</h2>
+                        <p>Costal de Achiote</p>
+                        <p>Promocion:</p>
+                        <p>En la compra de 3 Costales de Achiotes llevate uno Gratis</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Secci?n de Servicios y Precios -->
+        <section id="servicios" class="columnas">
+            <div class="izquierda">
+                <h2>Productos y Precios</h2>
+                <ul>
+                    <li>Pan de Achiote (chico): $75</li>
+                    <li>Pan de Achiote (Mediano): $125</li>
+                    <li>Pan de Achiote (grande): $175</li>
+                    <li>Costal de Achiote: $300</li>
+                    <!-- Agregar m?s servicios seg?n sea necesario -->
+                </ul>
+            </div>
+            <div class="derecha">
+                <img src="tintalrojo.jpg" alt="Servicio">
+            </div>
+        </section>
+
+<!-- Sección de Video -->
+<section id="video">
+    <h2>CONOCE NUESTRO EL PROCESO DEL ACHIOTE</h2>
+    <video width="600" controls>
+        <source src="ACHIOTE.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+    </video>
+</section>
+
+        <!-- Secci?n de Marcas -->
+        <section id="marcas">
+            <h2>Nuestra Marca</h2>
+            <div class="brands">
+                <img src="nuestramarca.jpg" width="200" heigth="250"  alt="Marca 1">
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Secci?n de Pie de pagina -->
+    <footer>
+        <p>&copy; 2025 Tintal Rojo. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/profile.php?id=61573802382315" target="_blank">Facebook</a> |
+            <a href="https://x.com/RojoTintal2025" target="_blank">Twitter</a> |
+            <a href="https://www.instagram.com/tintal_rojo?igsh=N2djemFsMms4aWc2" target="_blank">Instagram</a>
+        </div>
+        <p>Contacto: tintalrojo@gmail.com</p>
+    </footer>
+
+    <!-- script Codigo de JavaScript -->
+    <script>
+        // Funci?n para mostrar u ocultar el men? en m?viles
+        function toggleMenu() {
+          const menu = document.getElementById("menu");
+          menu.classList.toggle("responsive");
+        }
+      </script>
+</body>
+</html>

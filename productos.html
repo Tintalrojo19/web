@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Catalogo de Productos</title>
+
+</head>
+<body>
+    <!-- Sección encabezado -->
+    <header class="header">
+        <a href="Index.html" class="logo"><img src="imagen/logo2.jpg"></a>
+        <h1>TINTAL ROJO</h1>
+        <nav class="navbar">
+            <span class="icon" onclick="toggleMenu()">&#9776;</span>
+            <ul class="menu" id="menu">
+                <li><a href="Index.html">INICIO</a></li>
+                <li><a href="#quienes-somos">Quienes Somos</a></li>
+                <li><a href="productos.html">Catalogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de contenido principal-->
+    <main>
+        <h1>Catalogo de Productos</h1>
+        <div class="catalogo">
+            <!-- Producto 1 -->
+            <div class="producto">
+                <img src="aceite.jpeg" alt="Producto 1">
+                <div class="producto-info">
+                    <h2>Aceite de Achiote</h2>
+                    <p>Este aceite de Achiote se elabora con un aceite neutro.</p>
+                    <p class="precio">$80.00 / ltrs</p>
+                </div>
+            </div>
+    
+            <!-- Producto 2 -->
+            <div class="producto">
+                <img src="polvo.jpeg" alt="Producto 2">
+                <div class="producto-info">
+                    <h2>Polvo de Achiote</h2>
+                    <p>Para recrear, se necesitan 2 cucharadas de Achiote, una cucharada de aceite de canela, una cucharadita de vinagre blaco y jugo de limon</p>
+                    <p class="precio">$120.00 / kg</p>
+                </div>
+            </div>
+    
+            <!-- Producto 3 -->
+            <div class="producto">
+                <img src="liquido.jpeg" alt="Producto 3">
+                <div class="producto-info">
+                    <h2>Sazonador Con Achiote</h2>
+                    <p>Se prepara colocando 20gr de hojas secas y 1ltr de agua</p>
+                    <p class="precio">$60.00 / ltr</p>
+                </div>
+            </div>
+    
+            <!-- Producto 4 -->
+            <div class="producto">
+                <img src="chico.jpeg" alt="Producto 4">
+                <div class="producto-info">
+                    <h2>Pan De Achiote Chica</h2>
+                    <p>Se necesita 25 semillas de Achiote, vinagre, 2 Dientes de ajo, sal</p>
+                    <p class="precio">$70.00 / pza</p>
+                </div>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="producto">
+                <img src="mediano.jpeg" alt="Producto 4">
+                <div class="producto-info">
+                    <h2>Pan De Achiote Mediano</h2>
+                    <p>Se necesita 50 semillas de Achiote, Vinagre, Ajo, etc.</p>
+                    <p class="precio">$150.00 / pza</p>
+                </div>
+            </div>
+            <!-- Producto 6 -->
+            <div class="producto">
+                <img src="grande.jpeg" alt="Producto 4">
+                <div class="producto-info">
+                    <h2>Pan De Achiote Grande</h2>
+                    <p>Se Necesitan 100 semillas de Achiote, Vinagre, Ajo y Sal</p>
+                    <p class="precio">$200.00 / pza</p>
+                </div>
+            </div>
+            <!-- Producto 7 -->
+            <div class="producto">
+                <img src="entero.jpeg" alt="Producto 4">
+                <div class="producto-info">
+                    <h2>Costal De Achiote Entero</h2>
+                    <p>Costal de 5 Kg de Achiote entero</p>
+                    <p class="precio">$300.00 / 5kg</p>
+                </div>
+            </div>
+            <!-- Producto 8 -->
+            <div class="producto">
+                <img src="costal.jpeg" alt="Producto 4">
+                <div class="producto-info">
+                    <h2>Costal De Achiote en Semillas</h2>
+                    <p>Costal de 20kg De semillas de Achiote</p>
+                    <p class="precio">$400.00 / 20kg</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Sección de Pie de pagina -->
+    <footer>
+        <p>&copy; 2025 Tintal Rojo. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/profile.php?id=61573802382315" target="_blank">Facebook</a> |
+            <a href="https://x.com/RojoTintal2025" target="_blank">Twitter</a> |
+            <a href="https://www.instagram.com/tintal_rojo?igsh=N2djemFsMms4aWc2" target="_blank">Instagram</a>
+        </div>
+        <p>Contacto: info@tuempresa.com</p>
+    </footer>
+
+    <!-- script Codigo de JavaScript -->
+    <script>
+        // Función para mostrar u ocultar el menú en móviles
+        function toggleMenu() {
+          const menu = document.getElementById("menu");
+          menu.classList.toggle("responsive");
+        }
+    </script>
+</body>
+</html>
